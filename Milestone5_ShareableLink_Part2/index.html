@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ResumeBuilder</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2>GENERATE UNIQUE URL FOR YOUR RESUME</h2>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+           <label for="username">Curriculum Vitae URL:</label>
+           <input type="text" id="username" name="username" required/> <br/>
+
+            <label for="profilepicture">Profile Picture:</label>
+            <input type="file" id="profilepicture" name="profilepicture" accept="image/*"required>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="name" required>
+        
+            <label for="contactno">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required> 
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education:</label>
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skills: </label>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+        </fieldset>
+
+        <button type="submit">Generate Your Resume Now</button>
+
+    </form>
+
+
+    <div id="resumeGenerate">
+    </div>
+
+
+    <script src="shareableLink_Part2.js"></script>
+</body>
+</html>
