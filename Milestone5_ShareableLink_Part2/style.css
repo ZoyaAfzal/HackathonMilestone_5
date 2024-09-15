@@ -3,14 +3,14 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 20;
     padding: 0;
-    background-color: #112d38 ;
+    background-color: black ;
 }
 
 .profilePicture {
     display: block;
     margin: 0 auto;
-    border: 2px solid #022d3e;
-    box-shadow: 0 4px 8px rgba(16, 77, 82, 0.5);
+    border: 2px solid #3b193b;
+    box-shadow: 0 4px 8px rgba(188, 116, 173, 0.5);
     border-radius: 500%;
     width: 150px;
     height: 150px;
@@ -19,25 +19,26 @@ body {
 
 h2 {
     text-align: center;
-    color: whitesmoke;
+    color:#ad5999;
+
 }
 
 form {
     max-width:  600px;
     margin:auto;
-    background-color: rgb(248, 254, 254);
+    background-color: #393b3c;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(125, 86, 118, 0.5);
     padding: 20px;
 }
 
 fieldset {
-    border:2px solid #256b87
+    border:2px solid #ad5999;
 }
 
 legend {
     font-weight: bold;
-    color: #31718b;
+    color: #ac598f;
     text-align: left;
 
 }
@@ -45,18 +46,18 @@ legend {
 label {
     display: block;
     margin-top: 10px;
-    color: #31718b;
+    color: #dfb3d9;
 }
 
 input, textarea {
     width: calc(100% - 1px);
     padding: 8px;
     margin-top: 4px;
-    border: 1px solid #3498bd;
+    border: 1px solid #d89cd2;
     border-radius: 4px;
     box-sizing: border-box;
-    transition: border-color 0.3s,ox-shadow 0.3s;
-    color: gray;
+    transition: border-color 0.3s,box-shadow 0.3s;
+    color: rgb(205, 87, 187);
 }
 
 button {
@@ -64,7 +65,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color:  #256b87;
+    background-color:  #640d56;
     border: none;
     border-radius: 4px;
     font-size: 18px;
@@ -74,23 +75,23 @@ button {
     
 }
 
-button-hover {
-    background-color: #3498bd ;
+button:hover {
+    background-color: #b557a1 ;
 }
 
 #resumeGenerate {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    border: 2px solid  #31718b;
+    border: 2px solid  #76426d;
     border-radius: 8px;
     margin:auto;
     background-color:rgb(248, 254, 254) ; 
-    box-shadow: 0 4px 8px rgba(20, 59, 84, 0.5);
+    box-shadow: 0 4px 8px rgba(189, 144, 174, 0.5);
 
 }
 
 
 #resumeGenerate h2 {
-    color: #112d38;
+    color: #b477a2;
 }
