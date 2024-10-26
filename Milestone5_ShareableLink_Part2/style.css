@@ -1,97 +1,333 @@
 
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 20;
-    padding: 0;
-    background-color: black ;
+*{
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+
+body{
+    display: flex;
+    height: 300vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #151414, #8e3070, #933368);
+
+}
+#resumeForm{
+    max-width: 800px;
+    margin:auto;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(135deg, #b45596, #0c0a0a);
+    padding: 25px, 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px #161013;
+    border-color: #0d1215;
+    border: 2px solid trnsprent;
+    background-clip: padding-box;
+    border-image: linear-gradient(45deg, #0d0e0e, #751657) ;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+form .title{
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 800;
+    height: 60px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 70px;
+    background: linear-gradient(to right, #100d0f, #852b68 );
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: linear-gradient(135deg, #0d0e0e, #b33b8d) ;
+   
+}
+form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    width: 40%;
+    padding-left:480px;
+    background: linear-gradient(135deg, #0d0e0e, #751657);
+}
+form .title:hover{
+    background: linear-gradient(-135deg, #0d0e0e, #ad0f7b);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: linear-gradient(135deg, #0d0e0e, #751657) ;
+    font-weight: 1000;
+}
+::placeholder {
+    color: #150e12; 
+}
+
+
+fieldset {
+    border: 2px solid #7b1f60;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #100b0e, #e151b3);
+    box-shadow: 0 10px 20px #7a165c;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  }
+
+  .user-profile fieldset {
+    border: 2px solid #7b1f60;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #100b0e, #e151b3);
+    box-shadow: 0 10px 20px #7a165c;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  }
+ 
+
+  fieldset:hover {
+    border-color: #c54688;
+    box-shadow: 0 15px 30px #8e255b;
+    transform: translateY(-5px);
+  }
+  
+  legend {
+    font-size: 1.5rem;
+    border-color: #af3578;
+    color:#f1c9e4 ;
+    background: linear-gradient(145deg,#100d0f, #cf2189);
+    padding: 5px 10px;
+    border-radius: 14px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  legend:hover {
+    background: linear-gradient(145deg, #6d0244, #100d0f);
+    box-shadow: 0 8px 15px #b04c90;
+  }
+  
+
+ form .user-details{
+    color: #f1c9e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin-bottom: 5px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    color: #f1c9e4;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background: linear-gradient(-135deg, #100d0f, #cf2189);
+
+}
+
+.user-profile{
+    display: flex;
+    color: #f1c9e4;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 410;
+   margin-bottom: 10px;
+  
+}
 .profilePicture {
     display: block;
     margin: 0 auto;
-    border: 2px solid #3b193b;
-    box-shadow: 0 4px 8px rgba(188, 116, 173, 0.5);
+    border: 2px solid #d859ae;
+    box-shadow: 0 4px 8px #a53784;
     border-radius: 500%;
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
 
-h2 {
-    text-align: center;
-    color:#ad5999;
-
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #550d3f;
 }
-
-form {
-    max-width:  600px;
-    margin:auto;
-    background-color: #393b3c;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(125, 86, 118, 0.5);
-    padding: 20px;
+form .gender-details .gender-title{
+    color:#f1c9e4;
+    font-size: 20px;
+    font-weight: 400;
 }
-
-fieldset {
-    border:2px solid #ad5999;
-}
-
-legend {
-    font-weight: bold;
-    color: #ac598f;
-    text-align: left;
-
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    color: #dfb3d9;
-}
-
-input, textarea {
-    width: calc(100% - 1px);
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #d89cd2;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: border-color 0.3s,box-shadow 0.3s;
-    color: rgb(205, 87, 187);
-}
-
-button {
-    margin-top: 10px;
-    display: block;
+form .gender-details .category{
+    display: flex;
+    margin: 14px, 0;
     width: 100%;
-    padding: 10px;
-    background-color:  #640d56;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: whitesmoke;
+    justify-content: space-between;
+
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+
+}
+.gender-details .category .dot{
+    height: 18px;
+    width:18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #790e55;
+
+}
+form input[type="radio"]{
+    display:none;
+}
+
+input #education,
+input #experience,
+input #skills,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(-135deg, #100d0f, #cf2189);
+  color: #dcdcdc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+input #education,
+input #experience,
+input #skills,
+textarea:focus,
+input #education,
+input #experience,
+input #skills,
+textarea :valid{
+    border-color: #df4291;
+}
+
+.input-box .details{
+    color:#f1c9e4;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form .button{
+    height: 60px;
+    margin: 30px 0;
+    padding-left: 210px;
+}
+
+form .button button{
+    height: 100%;
+    width: 70%;
+    display: block;
+    outline: none;
+    color: #f1c9e4 ;
     cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #100d0f, #cf2189);
+}
+form .button button:hover{
+    background: linear-gradient(-135deg, #100d0f, #cf2189);
     
 }
-
-button:hover {
-    background-color: #b557a1 ;
-}
-
 #resumeGenerate {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid  #76426d;
-    border-radius: 8px;
+    max-width: 800px;
+    width:800px;
     margin:auto;
-    background-color:rgb(248, 254, 254) ; 
-    box-shadow: 0 4px 8px rgba(189, 144, 174, 0.5);
+    margin-top:2px;
+    height: 120vh;
+    position:absolute;
+    padding: 20px;
+    border: 3px solid #b04c90;
+    border-radius: 8px;
+    background-color: linear-gradient(135deg, #181117, #b04c90); 
+    box-shadow: 0 4px 8px 6, #63164a;
 
 }
 
 
 #resumeGenerate h2 {
-    color: #b477a2;
+    text-align: center;
+    padding-left:auto;
+    background: linear-gradient(to right, #100d0f, #eb7bc0);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: linear-gradient(135deg, #100d0f, #d56cad) ;
+   
+
+  
+   
+}
+
+#resumeGenerate p strong{
+    color:#a44580;
+}
+#resumeGenerate h3 {
+    padding-left: 8px;
+    color:#a44580;
+}
+#resumeGenerate span {
+    padding-left:8px;
+}
+ #buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:50px;
+ }
+#buttonsContainer button {
+    height: 40px;
+    margin: 30px 0;
+    display: flex;
+    align-content: center;
+    white-space: 10px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding-top:8px;
+    padding:10px;
+    margin-left:10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #100d0f, #cf2189);
+}
+#buttonsContainer button:hover{
+    background: linear-gradient(-135deg, #100d0f, #cf2189);
 }

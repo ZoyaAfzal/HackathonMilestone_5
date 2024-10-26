@@ -1,60 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My ResumeBuilder</title>
-    <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
-    <h2>GENERATE UNIQUE URL & SHAREABLE LINK FOR YOUR RESUME</h2>
-    <form id="resumeForm">
-        <fieldset>
-            <legend>Personal Information</legend>
-
-           <label for="username">Curriculum Vitae URL:</label>
-           <input type="text" id="username" name="username" required/> <br/>
-
-            <label for="profilepicture">Profile Picture:</label>
-            <input type="file" id="profilepicture" name="profilepicture" accept="image/*"required>
-
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="name" required>
-        
-            <label for="contactno">Contact Number:</label>
-            <input type="text" id="contact" name="contact" required> 
-            
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-
-        </fieldset>
-
-
-        <fieldset>
-            <legend>Education</legend>
-            <label for="Education">Education:</label>
-            <textarea id="education" name="education" rows="4" required></textarea><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>Experience</legend>
-            <label for="Experience">Experience:</label>
-            <textarea id="experience" name="experience" rows="4" required></textarea><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>Skills</legend>
-            <label for="Skills">Skills: </label>
-            <textarea id="skills" name="skills" rows="4" required></textarea><br>
-        </fieldset>
-
-        <button type="submit">Generate Your Resume Now</button>
-
-    </form>
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My ResumeBuilder</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    </head>
+    <body>
+        <form id="resumeForm">
+            <h2 class="title">GENERATE UNIQUE URL & SHAREABLE LINK FOR YOUR RESUME </h2>
+                <fieldset>
+                    <legend>Profile Picture</legend>
+                    <div class="user-profile">
+                        <label for="Profilepicture" class="details">Upload Your Profile Picture:</label>
+                        <input type="file" id="profilepicture" name="profilepicture" accept="image/*" required><br/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label for="Name" class="details">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your fullname" required><br/>
+                        </div>
+                        <div class="input-box">
+                            <label for="Email" class="details">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="Enter your email" required><br/>
+                        </div>        
+                        <div class="input-box">
+                            <label for="Contact" class="details">Contact Number:</label>
+                            <input type="text" id="contactno" name="contact" placeholder="Enter your number" required> <br/>
+                        </div>
+                        <div class="input-box">
+                            <label for="Address" class="details">Address :</label>
+                            <input type="text" id="address" name="address" placeholder="Enter your address" required> <br/>
+                        </div>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <div class="gender-details">
+                            <input type="radio" name="gender" id="dot-1" value="male">
+                            <input type="radio" name="gender" id="dot-2" value="female">
+                            <input type="radio" name="gender" id="dot-3" value="other">
+                            <label for="gender" class="gender-title">Gender:</label>
+                            <div class="category">
+                                <label for="dot-1" >
+                                    <span class="dot one"></span>
+                                    <label for="dot-1"  class="gender"value="male">Male</label>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two" id=></span>
+                                    <label for="dot-2"  class="gender">Female</label>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three" ></span>
+                                    <label for="dot-3"  class="gender" value="other">Prefer not to say</label>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                <fieldset>
+                    <legend>Education</legend>
+                    <div class="input-box">
+                        <label for="Education" class="details">Education:</label>
+                        <textarea id="education" name="education" rows="4" required></textarea><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Experience</legend>
+                        <div class="input-box">
+                            <label for="Experience" class="details">Experience:</label>
+                            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Skills</legend>
+                        <div class="input-box">
+                            <label for="Skills" class="details">Skills:</label>
+                            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+                        </div>
+                         </fieldset>
+                <div class="button">
+                    <button type="submit">Generate Your Resume Now</button> 
+                </div> 
+    
 
 
     <div id="resumeGenerate">
